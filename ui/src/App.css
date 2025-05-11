@@ -1,0 +1,27 @@
+.logo-top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+}
+
+.base-image {
+  position: relative; /* Ensure it is positioned relative to the flow of the document */
+  margin-top: 80px; /* Adjust to leave space below the navbar */
+  width: 100%; /* Make it span the full width of the screen */
+  object-fit: cover; /* Ensure the image scales properly without distortion */
+}
+
+.navbar-items {
+  position: absolute;
+  top: 10px;
+  left: 20rem;
+  display: flex;
+  gap: 20px; /* Adjust spacing as needed */
+}
+
+.ai-assist {
+  width: 2rem;
+
+}
