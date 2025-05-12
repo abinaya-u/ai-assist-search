@@ -1,15 +1,15 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import NavigationBar from './NavigationBar';
 
-describe('App Component', () => {
+describe('NavigationBar Component', () => {
   test('renders the logo', () => {
-    render(<App />);
+    render(<NavigationBar />);
     const logoElement = screen.getByAltText(/logo/i);
     expect(logoElement).toBeInTheDocument();
   });
 
   test('renders all navigation menu items', () => {
-    render(<App />);
+    render(<NavigationBar />);
     const menuItems = [
       'What we do',
       'Whom we work with',
@@ -25,13 +25,13 @@ describe('App Component', () => {
   });
 
   test('renders the base image', () => {
-    render(<App />);
+    render(<NavigationBar />);
     const baseImage = screen.getByAltText(/logo/i); // Assuming the alt text for the base image is "logo"
     expect(baseImage).toBeInTheDocument();
   });
 
   test('renders AI Assist menu item with icon', () => {
-    render(<App />);
+    render(<NavigationBar />);
     const aiAssistMenuItem = screen.getByText(/AI Assist/i);
     expect(aiAssistMenuItem).toBeInTheDocument();
   });

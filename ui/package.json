@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
+  "proxy": "https://0vrcvan3k3.execute-api.ap-southeast-2.amazonaws.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

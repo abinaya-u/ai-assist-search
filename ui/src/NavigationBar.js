@@ -1,11 +1,17 @@
+import React, { useState } from 'react';
 import logo from './assets/thoughtworks-logo.svg';
 import aiImg from './assets/image.png';
 import aiAssit from './assets/ai-assist.png';
-import './App.css';
+import './NavigationBar.css';
 import { MenuItem } from '@mui/material';
 import { Search } from '@mui/icons-material';
+import AIAssistDialog from './AIAssistDialog';
 
-function App() {
+function NavigationBar() {
+  const [openDialog, setOpenDialog] = useState(false);
+  const handleOpenDialog = () => setOpenDialog(true);
+  const handleCloseDialog = () => setOpenDialog(false);
+
   return (
     <>
       <div className='Tech redar'>
@@ -28,17 +34,19 @@ function App() {
               Contact
             </MenuItem>
             <MenuItem className='navbar-item' href='#contact'>
-              <Search style={{ marginRight: '8px' }}/>Search
+              <Search style={{ marginRight: '8px' }} />
+              Search
             </MenuItem>
-            <MenuItem className='navbar-item' href='#ai-assist'>
-              <img src={aiAssit} className='ai-assist' alt='ai-assit-img'/> AI Assist
+            <MenuItem className='navbar-item' onClick={handleOpenDialog}>
+              <img src={aiAssit} className='ai-assist' alt='ai-assist-img' /> AI Assist
             </MenuItem>
           </div>
         </nav>
       </div>
       <img src={aiImg} className='base-image' alt='aiImg' />
+      <AIAssistDialog open={openDialog} onClose={handleCloseDialog} />
     </>
   );
 }
 
-export default App;
+export default NavigationBar;

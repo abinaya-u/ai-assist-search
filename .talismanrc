@@ -1,6 +1,8 @@
 fileignoreconfig:
-- filename: ui/yarn.lock
-  checksum: 399e0dc54e86937ec219ca7e275f4fe6383e2bec9b44a6310c5975b7f7ed044b
+- filename: ui/src/AIAssistDialog.js
+  checksum: 6f7a0afa0f233e1643e7d2405da3e41c55fc8a56b9ac7831bcb0826fcc0bffcc
 - filename: ui/src/assets/image.png
   checksum: 44b076c27a7b9f144e1ec4df7866a26c5df2f7ec6fa2439c672d123d0ed9968f
+- filename: ui/yarn.lock
+  checksum: 399e0dc54e86937ec219ca7e275f4fe6383e2bec9b44a6310c5975b7f7ed044b
 version: "1.0"
