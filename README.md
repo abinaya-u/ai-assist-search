@@ -37,3 +37,5 @@ Run the following command to execute tests:
 ```bash
 yarn test
 ```
+
+## Click [here](https://ai-assist-search.vercel.app/) to visit the website.
