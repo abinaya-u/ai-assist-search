@@ -39,7 +39,7 @@ function AIPromptDialog({ open, onClose }) {
 
     setLoading(true);
     try {
-      const res = await fetch('/prod/query', {
+      const res = await fetch('https://0vrcvan3k3.execute-api.ap-southeast-2.amazonaws.com/prod/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
