@@ -39,3 +39,7 @@ yarn test
 ```
 
 ## Click [here](https://ai-assist-search.vercel.app/) to visit the website.
+
+## Technical Architecture
+![Tech Radar Blips](https://github.com/user-attachments/assets/cfab2635-f999-41a4-adae-60e65110f9f7)
+
